@@ -1,0 +1,301 @@
+:root {
+    /* ### Primary */
+
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* ### Neutral */
+
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayis-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-grayis-cyan);
+
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    border-radius: 22px;
+    margin-top: 100px;
+    height: 40vh;
+    /* width: 800px; */
+    min-width: 375px;
+
+    max-width: 1440px;
+
+}
+
+header h1 {
+    margin: 90px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-transform: capitalize; */
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-style: normal;
+
+}
+
+section {
+    display: flex;
+    background-color: white;
+    width: 800px;
+
+    max-width: 1440px;
+    min-width: 375px;
+    padding: 1rem;
+
+    padding-left: 3rem;
+    border-radius: 22px;
+
+}
+
+.porcentagem {
+    width: 50%;
+}
+
+.valor {
+    margin-bottom: 20px;
+}
+
+.valor h3 {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: var(--Dark-grayish-cyan);
+}
+
+.valor input {
+    background: url(./tip-calculator-app-main/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Very-light-grayish-cyan);
+    background-position: 0 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 308px;
+    text-align: end;
+    margin-bottom: .5rem;
+    color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+
+
+
+}
+
+.people input[type=number]:focus {
+    outline-color: aqua;
+}
+
+.people input[type=number] {
+    outline: none;
+}
+
+/* .valor input[type=number]{outline:none;} */
+
+input {
+    border: none;
+}
+
+.people input {
+    background: url(./tip-calculator-app-main/images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 0 9px;
+    height: 40px;
+    width: 308px;
+    text-align: end;
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 5px;
+    color: var(--Very-dark-cyan);
+    font-size: 24px;
+
+
+}
+
+.people h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan);
+    margin-bottom: 6px;
+}
+
+.escolha h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Dark-grayish-cyan);
+
+}
+
+.escolha article {
+    margin-bottom: 1rem;
+}
+
+.button {
+    height: 35px;
+    width: 100px;
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+
+}
+
+.customise {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: end;
+    background-color: var(--Very-light-grayish-cyan);
+
+
+}
+
+.escolha h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.escolha input {
+    gap: .5rem;
+    margin-bottom: 5px;
+}
+
+/* segunda caixa */
+
+.resultado {
+
+    background-color: var(--Very-dark-cyan);
+    border-radius: 20px;
+    width: 50%;
+}
+
+.pessoa {
+    display: flex;
+}
+
+.amount h3,
+.total h3 {
+    font-size: 24px;
+    color: var(--White);
+}
+
+.amount p,
+.total p {
+    color: var(--Dark-grayish-cyan);
+}
+
+.amount {
+    display: flex;
+    margin: 40px 15px;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+
+}
+
+.total {
+    display: flex;
+    margin: 0 15px;
+    flex-direction: column;
+}
+
+.resultado button {
+    margin: 75px 2rem;
+    width: 300px;
+    height: 40px;
+    background-color: var(--Strong-cyan);
+    border: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.todo {
+    display: flex;
+
+}
+
+.outTotal {
+    color: var(--Strong-cyan);
+    display: inline;
+    margin: 10px 200px;
+    font-size: 24px;
+
+
+}
+
+.outMount {
+    color: var(--Strong-cyan);
+    font-size: 24px;
+    margin: 50px 170px;
+}
+
+@media screen and (max-width:375px) {
+    section {
+        display: flex;
+        background-color: white;
+        height: 95vh;
+        flex-direction: column;
+    }
+
+    .escolha article {
+        display: grid;
+        gap: .4rem;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .people{
+        margin-bottom: 30px;
+    }
+    .porcentagem{
+        width: 100%;
+    }
+    .resultado{
+        width: 100%;
+    }
+    .outTotal {
+        color: var(--Strong-cyan);
+        display: inline;
+        margin: 10px 115px;
+        font-size: 24px;
+    
+    
+    }
+    .button{
+        height: 45px;
+        width: 150px;
+        background-color: var(--Very-dark-cyan);
+        color: white;
+        border-radius: 5px;
+        font-size: 24px;
+    }
+    
+    .outMount {
+        color: var(--Strong-cyan);
+        font-size: 24px;
+        margin: 50px 40px;
+    }
+    .resultado button {
+        margin: 100px 3rem 28px ;
+        width: 200px;
+        height: 40px;
+        /* background-color: var(--Strong-cyan);
+        border: none;
+        font-size: 24px;
+        border-radius: 5px; */
+    }
+}
